@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Autómata DT Meta — Conocimiento para Copilot</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1f2937;--muted:#6b7280;--blue:#0b4f8a;--line:#d8dee8;--head:#eaf1f8}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:var(--blue);color:#fff;padding:26px 20px}.wrap{max-width:1400px;margin:auto;padding:20px}
+nav a{color:#fff;margin-right:18px;text-decoration:none;font-weight:700}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;margin:18px 0}
+h1,h2,h3{line-height:1.2} h2{margin-top:34px}.notice{background:#fff7db;border-left:4px solid #c28b00;padding:14px 16px;margin:16px 0}
+input.search{width:100%;padding:11px 12px;border:1px solid #aeb8c4;border-radius:7px;margin:8px 0 14px;font-size:15px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px;max-height:720px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #e4e8ee;border-right:1px solid #eef1f4;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--head);position:sticky;top:0;z-index:1}tr:nth-child(even) td{background:#fbfcfd}
+code{background:#eef2f6;padding:2px 5px;border-radius:4px}pre{white-space:pre-wrap;background:#101827;color:#eef2f6;padding:14px;border-radius:8px;overflow:auto}
+.small{color:var(--muted);font-size:13px}.badge{display:inline-block;background:#e8f1fb;color:#0b4f8a;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:700}
+footer{color:var(--muted);font-size:12px;padding:28px 20px;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Autómata DT Meta — Conocimiento para Copilot</h1>
+<nav><a href="index.html">Inicio</a><a href="manual/">Manual Maestro</a><a href="catalogo/">Catálogo Operativo</a></nav></div></header>
+<main class="wrap">
+<div class="card">
+<h2>Fuentes para Microsoft Copilot Agent Builder</h2>
+<p>Este sitio separa el conocimiento del autómata en dos páginas públicas HTTPS:</p>
+<ol>
+<li><strong>Manual Maestro:</strong> reglas lógicas del agente.</li>
+<li><strong>Catálogo Operativo:</strong> tablas controladas obtenidas del Excel.</li>
+</ol>
+<p><span class="badge">No incluir históricos</span> <span class="badge">No incluir PQRSD reales</span> <span class="badge">No incluir datos ciudadanos</span></p>
+</div>
+<div class="notice"><strong>Advertencia de publicación:</strong> cualquier persona que conozca la URL podrá consultar el contenido. El archivo incluye nombres de funcionarios y reglas internas de reparto. Antes de publicar, valide que la entidad autoriza hacer pública esa información.</div>
+<div class="card">
+<h2>URLs que se agregarán al agente</h2>
+<pre><code>https://TUUSUARIO.github.io/automata-dt-meta/manual/
+https://TUUSUARIO.github.io/automata-dt-meta/catalogo/</code></pre>
+</div>
+</main>
+<footer>Autómata de Análisis y Reparto — DT Meta · Página estática preparada para fuente de conocimiento pública HTTPS.</footer>
+<script>
+function filterTable(inputId, tableId){
+  const q=document.getElementById(inputId).value.toLowerCase().trim();
+  const rows=document.querySelectorAll('#'+tableId+' tbody tr');
+  rows.forEach(r=>{r.style.display=r.innerText.toLowerCase().includes(q)?'':'none';});
+}
+</script>
+</body></html>
